@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      toadbee_0: 6894871245334268648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
