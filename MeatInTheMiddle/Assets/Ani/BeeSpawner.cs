@@ -2,20 +2,7 @@ using UnityEngine;
 
 public class BeeSpawner : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
-=======
     [Header("References")]
     public GameObject beePrefab;
 
@@ -68,4 +55,4 @@ public class BeeSpawner : MonoBehaviour
         Debug.Log("Ammo replenished! Current ammo: " + currentAmmo);
     }
 }
->>>>>>> Stashed changes
+

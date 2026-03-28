@@ -2,20 +2,7 @@ using UnityEngine;
 
 public class BeeSpawnerTurret : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
-=======
     [Header("References")]
     public GameObject beePrefab;
 
@@ -62,4 +49,4 @@ public class BeeSpawnerTurret : MonoBehaviour
         mover.vanishDistance = vanishDistance;
     }
 }
->>>>>>> Stashed changes
+
