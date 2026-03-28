@@ -275,8 +275,8 @@ Transform:
   m_GameObject: {fileID: 391475518}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0671, y: 6.7331, z: 0}
-  m_LocalScale: {x: 17.33115, y: 3.4436195, z: 1}
+  m_LocalPosition: {x: 0.7044, y: 6.7331, z: 0}
+  m_LocalScale: {x: 18.60499, y: 3.4436195, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 841846631}
   - component: {fileID: 841846630}
   - component: {fileID: 841846629}
+  - component: {fileID: 841846634}
   m_Layer: 0
   m_Name: meat
   m_TagString: Untagged
@@ -504,6 +505,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &841846634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841846628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39fb86c4cfad50a45a8a84042efe8724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallPrefab: {fileID: 3843897413265653087, guid: 5923416291578e6428abb8e92a7c847d, type: 3}
+  spawnInterval: 1
+  spawnDistanceFromMeat: 2
+  wallSpeed: 5
+  vanishDistance: 6
+  minY: -2
+  maxY: 2
+  minWallsPerSpawn: 2
+  maxWallsPerSpawn: 3
+  wallHeight: 1.5
+  wallGap: 0.5
 --- !u!1 &991642650
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,8 +821,8 @@ Transform:
   m_GameObject: {fileID: 1060182916}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.18, y: 0.02, z: 0}
-  m_LocalScale: {x: 4.689654, y: 10.098024, z: 1}
+  m_LocalPosition: {x: -10.9192, y: 0.02, z: 0}
+  m_LocalScale: {x: 6.1683016, y: 10.098024, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1121,8 +1145,8 @@ Transform:
   m_GameObject: {fileID: 1566035091}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.98, y: 0.0607, z: 0}
-  m_LocalScale: {x: 6.050691, y: 10.007345, z: 1}
+  m_LocalPosition: {x: 13, y: 0.0607, z: 0}
+  m_LocalScale: {x: 6, y: 10.007345, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
