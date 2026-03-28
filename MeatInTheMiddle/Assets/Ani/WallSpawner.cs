@@ -39,12 +39,13 @@ public float wallGap = 0.5f; // extra gap between walls
 
 void SpawnWall()
 {
-    int wallCount = Random.Range(minWallsPerSpawn, maxWallsPerSpawn + 1);
+    SpawnWallsOnSide(Mathf.Round((transform.position.x - spawnDistanceFromMeat) * 100f) / 100f, 1f);
+    SpawnWallsOnSide(Mathf.Round((transform.position.x + spawnDistanceFromMeat) * 100f) / 100f, -1f);
+}
 
-    float spawnX = transform.position.x + spawnDistanceFromMeat;
-    float slotSize = wallHeight + wallGap-0.15f;
-
-    // Build list of all available slot centers
+void SpawnWallsOnSide(float spawnX, float direction)
+{
+    float slotSize = wallHeight + wallGap - 0.05f;
     List<float> slots = new List<float>();
     float current = minY + wallHeight / 2f;
     while (current <= maxY - wallHeight / 2f)
@@ -53,7 +54,7 @@ void SpawnWall()
         current += slotSize;
     }
 
-    // Shuffle the slots
+    // Shuffle independently per side
     for (int i = slots.Count - 1; i > 0; i--)
     {
         int j = Random.Range(0, i + 1);
@@ -62,20 +63,22 @@ void SpawnWall()
         slots[j] = temp;
     }
 
-    // Pick the first N slots after shuffling
+    int wallCount = Random.Range(minWallsPerSpawn, maxWallsPerSpawn + 1);
     int spawnCount = Mathf.Min(wallCount, slots.Count);
+
     for (int i = 0; i < spawnCount; i++)
     {
-        // Small random offset within the slot so it feels natural
-        float randomOffset = Random.Range(-wallGap / 2f, wallGap / 2f);
-        float spawnY = slots[i] + randomOffset;
-
-        Vector3 spawnPos = new Vector3(spawnX, spawnY, 0f);
-        GameObject wall = Instantiate(wallPrefab, spawnPos, Quaternion.identity);
-
-        WallMover mover = wall.GetComponent<WallMover>();
-        mover.speed = wallSpeed;
-        mover.vanishDistance = vanishDistance;
+        float spawnY = Mathf.Round(slots[i] * 100f) / 100f;
+        SpawnSingleWall(new Vector3(spawnX, spawnY, 0f), direction);
     }
+}
+
+void SpawnSingleWall(Vector3 position, float direction)
+{
+    GameObject wall = Instantiate(wallPrefab, position, Quaternion.identity);
+    WallMover mover = wall.GetComponent<WallMover>();
+    mover.speed = wallSpeed;
+    mover.vanishDistance = vanishDistance;
+    mover.direction = -direction;
 }
 }
