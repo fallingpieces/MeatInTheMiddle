@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9207759890002852312}
   - component: {fileID: 4843169457359761672}
   m_Layer: 0
-  m_Name: Turret
+  m_Name: TurretToad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,9 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ea51e4fe5ebdd49b7ca836d2aca5f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beePrefab: {fileID: 2705350934659216455, guid: 134ba18dd0d0bf241a0c48abefe03d30, type: 3}
+  beePrefab: {fileID: 2705350934659216455, guid: 468133166d37fe446b19c8680159bafc, type: 3}
   beeSpeed: 8
   vanishDistance: 10
-  shootDirection: {x: 1, y: 0}
+  shootDirection: {x: -1, y: 0}
   activeDuration: 3
   fireRate: 0.5

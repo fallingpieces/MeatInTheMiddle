@@ -36,7 +36,7 @@ public class ToadHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            SceneManager.LoadScene(8);
+            SceneManager.LoadScene(9);
         }
     }
 }
