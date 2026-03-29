@@ -22,13 +22,15 @@ public class ToadMovement : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal_P2");
         float y = Input.GetAxisRaw("Vertical_P2");
 
-        if (x != 0)
+        Vector2 input = new Vector2(x, y).normalized; // moved up here!
+
+        if (input != Vector2.zero)
         {
-            tongueSpawner.facingDirection = new Vector2(x, 0).normalized;
-            sr.flipX = x > 0; // flip when moving right since toad naturally faces left
+            tongueSpawner.facingDirection = input;
+            if (x != 0)
+                sr.flipX = x > 0;
         }
 
-        Vector2 input = new Vector2(x, y).normalized;
         rb.linearVelocity = input * moveSpeed;
         animator.SetBool("isMoving2", input.magnitude > 0);
         if (tongueSpawner != null)

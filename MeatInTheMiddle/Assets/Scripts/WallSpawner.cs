@@ -11,7 +11,7 @@ public class WallSpawner : MonoBehaviour
     public float spawnDistanceFromMeat = 10f;
 
     [Header("Wall Settings")]
-    public float wallSpeed = 5f;
+    public float wallSpeed = 2.5f;
     public float vanishDistance = 15f;
 
     [Header("Vertical Randomness")]

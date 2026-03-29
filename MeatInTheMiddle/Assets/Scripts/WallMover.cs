@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WallMover : MonoBehaviour
 {
-    [HideInInspector] public float speed = 5f;
+    [HideInInspector] public float speed = 3f;
     [HideInInspector] public float vanishDistance = 10f;
     [HideInInspector] public float direction = 1f; // -1 = left, 1 = right
 

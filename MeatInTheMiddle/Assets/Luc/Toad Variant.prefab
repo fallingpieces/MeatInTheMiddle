@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1482388717996602910
+--- !u!1001 &5226411862655111520
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -14,11 +14,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2747584641344649459, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
       propertyPath: m_Name
-      value: Toad Variant
+      value: Toad Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 2747584641344649459, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
       propertyPath: m_TagString
       value: retep
+      objectReference: {fileID: 0}
+    - target: {fileID: 4624443013884680737, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4624443013884680737, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4624443013884680737, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4624443013884680737, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66,35 +78,41 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2747584641344649459, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7855142697397577162}
+      addedObject: {fileID: 6469861502437246715}
     - targetCorrespondingSourceObject: {fileID: 2747584641344649459, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6356493220253021871}
+      addedObject: {fileID: 265829564138093179}
     - targetCorrespondingSourceObject: {fileID: 2747584641344649459, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3404713673290024340}
+      addedObject: {fileID: 1217587653678049788}
     - targetCorrespondingSourceObject: {fileID: 2747584641344649459, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7845728827500337841}
+      addedObject: {fileID: 2055194139713587559}
     - targetCorrespondingSourceObject: {fileID: 2747584641344649459, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 510154441422584081}
+      addedObject: {fileID: 6855421143266637156}
     - targetCorrespondingSourceObject: {fileID: 2747584641344649459, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3000057395040347943}
+      addedObject: {fileID: 9117656732456767034}
+    - targetCorrespondingSourceObject: {fileID: 2747584641344649459, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7469151534320680762}
+    - targetCorrespondingSourceObject: {fileID: 2747584641344649459, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8460321775764664413}
   m_SourcePrefab: {fileID: 100100000, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
---- !u!1 &3653511129261493997 stripped
+--- !u!1 &7973218835439856019 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2747584641344649459, guid: 3dcdb554588411d41b432bb016d10069, type: 3}
-  m_PrefabInstance: {fileID: 1482388717996602910}
+  m_PrefabInstance: {fileID: 5226411862655111520}
   m_PrefabAsset: {fileID: 0}
---- !u!60 &7855142697397577162
+--- !u!60 &6469861502437246715
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3653511129261493997}
+  m_GameObject: {fileID: 7973218835439856019}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -163,26 +181,29 @@ PolygonCollider2D:
       - {x: -0.049999997, y: -0.515}
       - {x: 0.02, y: -0.645}
   m_UseDelaunayMesh: 0
---- !u!114 &6356493220253021871
+--- !u!114 &265829564138093179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3653511129261493997}
+  m_GameObject: {fileID: 7973218835439856019}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb36a965b65e15d44b44099834600ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2
---- !u!114 &3404713673290024340
+  maxHealth: 3
+  damageDuration: 0.5
+  pulseSpeed: 3
+  deathDelay: 1
+--- !u!114 &1217587653678049788
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3653511129261493997}
+  m_GameObject: {fileID: 7973218835439856019}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 565903ea94ea2b048b594c64400a5017, type: 3}
@@ -190,31 +211,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretPrefab: {fileID: 1959784131547025412, guid: 6895845e7383b4542aa2f217b37d5c83, type: 3}
   spawnOffset: {x: 0, y: 0, z: 0}
---- !u!114 &7845728827500337841
+  maxTurrets: 3
+  currentTurrets: 2
+--- !u!114 &2055194139713587559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3653511129261493997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf5c1e2499a25c34e85c430bfc712a0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beePrefab: {fileID: 2705350934659216455, guid: ec950c7ed6b74c649ae42f9f1ef41383, type: 3}
-  tongueSpawner: {fileID: 0}
-  maxAmmo: 5
-  currentAmmo: 5
-  rechargeTime: 2
-  shootCooldown: 0.5
---- !u!114 &510154441422584081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3653511129261493997}
+  m_GameObject: {fileID: 7973218835439856019}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: afd0393cf5099c64d831b3f394901759, type: 3}
@@ -222,16 +227,74 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tonguePrefab: {fileID: 4281538996317431099, guid: b83e772fd7969cc449c56bd209d365d0, type: 3}
   spawnDistance: 2
+  spawnOffset: {x: 0, y: 0}
   facingDirection: {x: 1, y: 0}
---- !u!114 &3000057395040347943
+  isAttacking2: 0
+--- !u!114 &6855421143266637156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3653511129261493997}
+  m_GameObject: {fileID: 7973218835439856019}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a561fb2b437b944d84cf5deed04f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9117656732456767034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973218835439856019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565903ea94ea2b048b594c64400a5017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turretPrefab: {fileID: 0}
+  spawnOffset: {x: 0, y: 0, z: 0}
+  maxTurrets: 3
+  currentTurrets: 2
+--- !u!114 &7469151534320680762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973218835439856019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcb702c62c65564b9dfa795e797bcf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beePrefab: {fileID: 2705350934659216455, guid: ec950c7ed6b74c649ae42f9f1ef41383, type: 3}
+  tongueSpawner: {fileID: 0}
+  maxAmmo: 10
+  currentAmmo: 5
+  rechargeTime: 0.74
+  shootCooldown: 0.24
+--- !u!95 &8460321775764664413
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973218835439856019}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 23cdf6ccd0136224a9bed5bf516ba884, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -237,9 +237,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallPrefab: {fileID: 3843897413265653087, guid: 5923416291578e6428abb8e92a7c847d, type: 3}
-  spawnInterval: 0.5
+  spawnInterval: 1
   spawnDistanceFromMeat: 1
-  wallSpeed: 5
+  wallSpeed: 3.5
   vanishDistance: 6
   minY: -5
   maxY: 5

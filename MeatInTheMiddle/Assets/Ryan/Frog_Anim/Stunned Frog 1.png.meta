@@ -1,52 +1,52 @@
 fileFormatVersion: 2
-guid: 498b6cc2c05131a4c9c166d197e5ec63
+guid: db57556cb3b9d5446b1fae7246c84d0e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7180780021529952474
-    second: Stunned Frog_0
+      213: -6532142900672831533
+    second: Stunned Frog 1_0
   - first:
-      213: -8636433614270275329
-    second: Stunned Frog_1
+      213: 8594728313335181248
+    second: Stunned Frog 1_1
   - first:
-      213: 2150059269531957876
-    second: Stunned Frog_2
+      213: -8025302338846867721
+    second: Stunned Frog 1_2
   - first:
-      213: -2811357451658839707
-    second: Stunned Frog_3
+      213: 8734484067000601353
+    second: Stunned Frog 1_3
   - first:
-      213: 4449645465007351396
-    second: Stunned Frog_4
+      213: 7222878459402446517
+    second: Stunned Frog 1_4
   - first:
-      213: 965258177157145726
-    second: Stunned Frog_5
+      213: -224692446305997275
+    second: Stunned Frog 1_5
   - first:
-      213: -6080394396375207290
-    second: Stunned Frog_6
+      213: -479990805206044156
+    second: Stunned Frog 1_6
   - first:
-      213: -745511733779134018
-    second: Stunned Frog_7
+      213: 6801083401917968698
+    second: Stunned Frog 1_7
   - first:
-      213: -1231200513486675998
-    second: Stunned Frog_8
+      213: 2149052482312342252
+    second: Stunned Frog 1_8
   - first:
-      213: 4830538709784819683
-    second: Stunned Frog_9
+      213: 6272299535491323326
+    second: Stunned Frog 1_9
   - first:
-      213: -3029268981556536661
-    second: Stunned Frog_10
+      213: 4741540965830611254
+    second: Stunned Frog 1_10
   - first:
-      213: 207453205693033438
-    second: Stunned Frog_11
+      213: 109591365125890779
+    second: Stunned Frog 1_11
   - first:
-      213: 724068411573057245
-    second: Stunned Frog_12
+      213: 8683900886175100637
+    second: Stunned Frog 1_12
   - first:
-      213: -5990525279778432505
-    second: Stunned Frog_13
+      213: -2617750411416991407
+    second: Stunned Frog 1_13
   - first:
-      213: 1641276300637668963
-    second: Stunned Frog_14
+      213: -1139228321285967859
+    second: Stunned Frog 1_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -155,7 +155,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stunned Frog_0
+      name: Stunned Frog 1_0
       rect:
         serializedVersion: 2
         x: 56
@@ -170,14 +170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad0c389526147a360800000000000000
-      internalID: 7180780021529952474
+      spriteID: 3df5e4ff3aa2955a0800000000000000
+      internalID: -6532142900672831533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_1
+      name: Stunned Frog 1_1
       rect:
         serializedVersion: 2
         x: 88
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff06d27b269352880800000000000000
-      internalID: -8636433614270275329
+      spriteID: 0cfe5593ddb964770800000000000000
+      internalID: 8594728313335181248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_2
+      name: Stunned Frog 1_2
       rect:
         serializedVersion: 2
         x: 96
@@ -214,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47afc7e938b86dd10800000000000000
-      internalID: 2150059269531957876
+      spriteID: 7febbedea0660a090800000000000000
+      internalID: -8025302338846867721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_3
+      name: Stunned Frog 1_3
       rect:
         serializedVersion: 2
         x: 112
@@ -236,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5693a3dfa4d0cf8d0800000000000000
-      internalID: -2811357451658839707
+      spriteID: 90b41ed4bfe173970800000000000000
+      internalID: 8734484067000601353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_4
+      name: Stunned Frog 1_4
       rect:
         serializedVersion: 2
         x: 208
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 466e036a9f050cd30800000000000000
-      internalID: 4449645465007351396
+      spriteID: 5b6e08cb0b1dc3460800000000000000
+      internalID: 7222878459402446517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_5
+      name: Stunned Frog 1_5
       rect:
         serializedVersion: 2
         x: 210
@@ -280,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e742efda239456d00800000000000000
-      internalID: 965258177157145726
+      spriteID: 52ea73a196bb1ecf0800000000000000
+      internalID: -224692446305997275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_6
+      name: Stunned Frog 1_6
       rect:
         serializedVersion: 2
         x: 200
@@ -302,14 +302,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 682b7c503891e9ba0800000000000000
-      internalID: -6080394396375207290
+      spriteID: 4027d30e7eab659f0800000000000000
+      internalID: -479990805206044156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_7
+      name: Stunned Frog 1_7
       rect:
         serializedVersion: 2
         x: 242
@@ -324,14 +324,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb9853c270967a5f0800000000000000
-      internalID: -745511733779134018
+      spriteID: a313023025d426e50800000000000000
+      internalID: 6801083401917968698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_8
+      name: Stunned Frog 1_8
       rect:
         serializedVersion: 2
         x: 25
@@ -346,14 +346,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ef195af7a5e9eee0800000000000000
-      internalID: -1231200513486675998
+      spriteID: cea06e3b8d7f2dd10800000000000000
+      internalID: 2149052482312342252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_9
+      name: Stunned Frog 1_9
       rect:
         serializedVersion: 2
         x: 58
@@ -368,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e77f7efc55890340800000000000000
-      internalID: 4830538709784819683
+      spriteID: eb5dec9023fab0750800000000000000
+      internalID: 6272299535491323326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_10
+      name: Stunned Frog 1_10
       rect:
         serializedVersion: 2
         x: 207
@@ -390,14 +390,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: baa963939efd5f5d0800000000000000
-      internalID: -3029268981556536661
+      spriteID: 631db4cf2665dc140800000000000000
+      internalID: 4741540965830611254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_11
+      name: Stunned Frog 1_11
       rect:
         serializedVersion: 2
         x: 225
@@ -412,14 +412,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edb69d8679501e200800000000000000
-      internalID: 207453205693033438
+      spriteID: bd267c414c8558100800000000000000
+      internalID: 109591365125890779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_12
+      name: Stunned Frog 1_12
       rect:
         serializedVersion: 2
         x: 10
@@ -434,14 +434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd6b4e052686c0a00800000000000000
-      internalID: 724068411573057245
+      spriteID: ddeaa21c8d9638870800000000000000
+      internalID: 8683900886175100637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_13
+      name: Stunned Frog 1_13
       rect:
         serializedVersion: 2
         x: 57
@@ -456,14 +456,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70a1fc84ff06ddca0800000000000000
-      internalID: -5990525279778432505
+      spriteID: 1598bd8ced1ebabd0800000000000000
+      internalID: -2617750411416991407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stunned Frog_14
+      name: Stunned Frog 1_14
       rect:
         serializedVersion: 2
         x: 214
@@ -478,8 +478,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36686cd791cf6c610800000000000000
-      internalID: 1641276300637668963
+      spriteID: d007fafa0e5a030f0800000000000000
+      internalID: -1139228321285967859
       vertices: []
       indices: 
       edges: []
@@ -498,21 +498,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Stunned Frog_0: 7180780021529952474
-      Stunned Frog_1: -8636433614270275329
-      Stunned Frog_10: -3029268981556536661
-      Stunned Frog_11: 207453205693033438
-      Stunned Frog_12: 724068411573057245
-      Stunned Frog_13: -5990525279778432505
-      Stunned Frog_14: 1641276300637668963
-      Stunned Frog_2: 2150059269531957876
-      Stunned Frog_3: -2811357451658839707
-      Stunned Frog_4: 4449645465007351396
-      Stunned Frog_5: 965258177157145726
-      Stunned Frog_6: -6080394396375207290
-      Stunned Frog_7: -745511733779134018
-      Stunned Frog_8: -1231200513486675998
-      Stunned Frog_9: 4830538709784819683
+      Stunned Frog 1_0: -6532142900672831533
+      Stunned Frog 1_1: 8594728313335181248
+      Stunned Frog 1_10: 4741540965830611254
+      Stunned Frog 1_11: 109591365125890779
+      Stunned Frog 1_12: 8683900886175100637
+      Stunned Frog 1_13: -2617750411416991407
+      Stunned Frog 1_14: -1139228321285967859
+      Stunned Frog 1_2: -8025302338846867721
+      Stunned Frog 1_3: 8734484067000601353
+      Stunned Frog 1_4: 7222878459402446517
+      Stunned Frog 1_5: -224692446305997275
+      Stunned Frog 1_6: -479990805206044156
+      Stunned Frog 1_7: 6801083401917968698
+      Stunned Frog 1_8: 2149052482312342252
+      Stunned Frog 1_9: 6272299535491323326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

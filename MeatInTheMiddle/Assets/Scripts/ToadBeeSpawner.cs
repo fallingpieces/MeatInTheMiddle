@@ -9,22 +9,43 @@ public class ToadBeeSpawner : MonoBehaviour
     [Header("Ammo")]
     public int maxAmmo = 5;
     public int currentAmmo;
+    [Header("Timers")]
+    public float rechargeTime = 2f;
+    public float shootCooldown = 1f;
+
+    private float rechargeTimer;
+    private float cooldownTimer;
 
     void Start()
     {
-        //currentAmmo = 0;
+        currentAmmo = 0;
         tongueSpawner = GetComponent<ToadTongueSpawner>();
+        rechargeTimer = rechargeTime;
+        cooldownTimer = 0f;
+
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Keypad2))
+        // Count down cooldown
+        if (cooldownTimer > 0f)
+            cooldownTimer -= Time.deltaTime;
+
+        // Count down recharge and add ammo
+        rechargeTimer -= Time.deltaTime;
+        if (rechargeTimer <= 0f)
+        {
+            AddAmmo(1);
+            rechargeTimer = rechargeTime;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad2) && cooldownTimer <= 0f)
         {
             Shoot();
         }
     }
 
-void Shoot()
+    void Shoot()
 {
     if (currentAmmo <= 0)
     {
@@ -32,7 +53,7 @@ void Shoot()
         return;
     }
 
-    Vector3 spawnPos = transform.position + (Vector3)(tongueSpawner.facingDirection * 1.5f);
+    Vector3 spawnPos = transform.position + (Vector3)(tongueSpawner.facingDirection * 1f);
     GameObject bee = Instantiate(beePrefab, spawnPos, Quaternion.identity);
     Debug.Log("Bee name: " + bee.name);
     Debug.Log("BeeMover exists: " + (bee.GetComponent<BeeMover>() != null));
@@ -50,7 +71,9 @@ void Shoot()
     mover.vanishDistance = 10f;
 
     currentAmmo--;
-}
+    cooldownTimer = shootCooldown;
+
+    }
 
     public void AddAmmo(int amount)
     {

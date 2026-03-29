@@ -8,11 +8,13 @@ public class ToadTurretSpawner : MonoBehaviour
     [Header("Spawn Settings")]
     public Vector3 spawnOffset = Vector3.zero;
 
-    private bool canSpawn = true;
+    [Header("Turret Ammo")]
+    public int maxTurrets = 3;
+    public int currentTurrets = 2; // start with 2
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Keypad1) && canSpawn)
+        if (Input.GetKeyDown(KeyCode.Keypad1) && currentTurrets > 0)
         {
             SpawnTurret();
         }
@@ -21,15 +23,19 @@ public class ToadTurretSpawner : MonoBehaviour
     void SpawnTurret()
     {
         Instantiate(turretPrefab, transform.position + spawnOffset, Quaternion.identity);
-        canSpawn = false;
+        currentTurrets--;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("meat"))
         {
-            canSpawn = true;
-            Destroy(other.gameObject); // remove the meat object on pickup
+            if (currentTurrets < maxTurrets)
+            {
+                currentTurrets++;
+                Debug.Log("Meat picked up! Turrets: " + currentTurrets);
+            }
+            Destroy(other.gameObject);
         }
     }
 }

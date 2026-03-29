@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.6947, y: -0.1262, z: 0}
-  m_LocalScale: {x: 0.1107989, y: 0.1046957, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2323917800338813707, guid: dc36199b8386f6c4e9b67d40c643e709, type: 3}
+  m_Sprite: {fileID: -1967145716185427822, guid: a5ca5d72519e57a439ba6531b69ecfbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beePrefab: {fileID: 2705350934659216455, guid: ec950c7ed6b74c649ae42f9f1ef41383, type: 3}
-  beeSpeed: 8
-  vanishDistance: 10
+  beeSpeed: 12
+  vanishDistance: 200
   shootDirection: {x: -1, y: 0}
-  activeDuration: 3
-  fireRate: 0.5
+  activeDuration: 20
+  fireRate: 0.32
