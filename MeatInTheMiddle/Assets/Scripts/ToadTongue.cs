@@ -1,40 +1,41 @@
 using UnityEngine;
 
-public class Tongue : MonoBehaviour
+public class ToadTongue : MonoBehaviour
 {
     [Header("Timing")]
     public float lingerDuration = 1f;
 
     [Header("Ammo")]
-    public BeeSpawner beeSpawner;
+    public ToadBeeSpawner beeSpawner;
 
-    [Header("Offset")]
-    public Vector2 spawnOffset = new Vector2(0f, 0f);
 
     void Start()
     {
-        // Apply offset based on facing direction
-        transform.position += new Vector3(spawnOffset.x, spawnOffset.y, 0);
-
         // Auto find BeeSpawner if not assigned
         if (beeSpawner == null)
-            beeSpawner = FindFirstObjectByType<BeeSpawner>();
+            beeSpawner = FindFirstObjectByType<ToadBeeSpawner>();
 
         // Destroy after linger duration if no collision
         Invoke(nameof(DestroyTongue), lingerDuration);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (!other.CompareTag("Beehurtfrog")) return;
-        Destroy(other.gameObject);
-        AddAmmoAndDestroy();
-    }
+void OnTriggerEnter2D(Collider2D other)
+{
+
+     
+    if (!other.CompareTag("Bee")) return;
+
+
+    Destroy(other.gameObject); // destroy the bee
+    AddAmmoAndDestroy();       // add ammo and destroy tongue
+}
 
     void AddAmmoAndDestroy()
     {
         if (beeSpawner != null)
             beeSpawner.AddAmmo(1);
+
+        // Cancel the linger destroy since we're destroying now
         CancelInvoke(nameof(DestroyTongue));
         Destroy(gameObject);
     }

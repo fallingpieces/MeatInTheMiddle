@@ -12,7 +12,7 @@ public class BeeSpawner : MonoBehaviour
 
     void Start()
     {
-        currentAmmo = 0;
+        //currentAmmo = 0;
         tongueSpawner = GetComponent<TongueSpawner>();
     }
 

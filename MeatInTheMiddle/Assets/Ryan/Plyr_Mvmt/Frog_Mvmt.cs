@@ -4,21 +4,17 @@ public class FrogMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
-
-    private TongueSpawner1 tongueSpawner;
-
+    private TongueSpawner tongueSpawner;
     private Animator animator;
-
     private SpriteRenderer sr;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
-        tongueSpawner = GetComponent<TongueSpawner1>();
-        tongueSpawner.facingDirection = Vector2.right; // default direction
+        tongueSpawner = GetComponent<TongueSpawner>();
+        tongueSpawner.facingDirection = Vector2.right;
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-
     }
 
     void FixedUpdate()
@@ -26,17 +22,15 @@ public class FrogMovement : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal_P1");
         float y = Input.GetAxisRaw("Vertical_P1");
 
-        rb.linearVelocity = new Vector2(x, y).normalized * moveSpeed;
-
-        // Only update facing direction when moving horizontally
-        if (x != 0)
-        {
-            tongueSpawner.facingDirection = new Vector2(x, 0).normalized;
-            sr.flipX = x < 0;
-        }
-
         Vector2 input = new Vector2(x, y).normalized;
         rb.linearVelocity = input * moveSpeed;
+
+        // Update facing direction whenever moving in any direction
+        if (input != Vector2.zero)
+        {
+            tongueSpawner.facingDirection = input;
+            sr.flipX = x < 0;
+        }
 
         animator.SetBool("isMoving1", input.magnitude > 0);
         if (tongueSpawner != null)

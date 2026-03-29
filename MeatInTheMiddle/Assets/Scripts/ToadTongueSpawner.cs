@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TongueSpawner : MonoBehaviour
+public class ToadTongueSpawner : MonoBehaviour
 {
     [Header("References")]
     public GameObject tonguePrefab;
@@ -10,13 +10,13 @@ public class TongueSpawner : MonoBehaviour
     public Vector2 spawnOffset = new Vector2(0f, 0f);
 
     [HideInInspector]
-    public Vector2 facingDirection = Vector2.right;
+    public Vector2 facingDirection = Vector2.left;
     [HideInInspector]
-    public bool isAttacking1 = false;
+    public bool isAttacking2 = false;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.Keypad0))
         {
             SpawnTongue();
         }
@@ -24,16 +24,16 @@ public class TongueSpawner : MonoBehaviour
 
     void SpawnTongue()
     {
-        isAttacking1 = true;
+        isAttacking2 = true;
         Vector3 spawnPos = transform.position
             + (Vector3)(facingDirection.normalized * spawnDistance)
             + new Vector3(facingDirection.x * spawnOffset.x, spawnOffset.y, 0);
-        GameObject tongue = Instantiate(tonguePrefab, spawnPos, Quaternion.identity);
+        Instantiate(tonguePrefab, spawnPos, Quaternion.identity);
         Invoke("ResetAttack", 0.3f);
     }
 
     void ResetAttack()
     {
-        isAttacking1 = false;
+        isAttacking2 = false;
     }
 }

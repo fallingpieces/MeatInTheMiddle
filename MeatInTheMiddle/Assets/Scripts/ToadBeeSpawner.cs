@@ -32,7 +32,7 @@ void Shoot()
         return;
     }
 
-    Vector3 spawnPos = transform.position + (Vector3)(tongueSpawner.facingDirection * -1.5f);
+    Vector3 spawnPos = transform.position + (Vector3)(tongueSpawner.facingDirection * 1.5f);
     GameObject bee = Instantiate(beePrefab, spawnPos, Quaternion.identity);
     Debug.Log("Bee name: " + bee.name);
     Debug.Log("BeeMover exists: " + (bee.GetComponent<BeeMover>() != null));
@@ -45,7 +45,7 @@ void Shoot()
         return;
     }
 
-    mover.direction = -tongueSpawner.facingDirection;
+    mover.direction = tongueSpawner.facingDirection;
     mover.speed =8f;
     mover.vanishDistance = 10f;
 
