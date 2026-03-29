@@ -21,7 +21,6 @@ public class Tongue : MonoBehaviour
 
 void OnTriggerEnter2D(Collider2D other)
 {
-    if (other.CompareTag("Meat")) return;
     if (!other.CompareTag("Bee")) return;
 
     Destroy(other.gameObject); // destroy the bee
