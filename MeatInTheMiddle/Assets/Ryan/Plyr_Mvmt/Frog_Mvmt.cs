@@ -38,5 +38,7 @@ public class FrogMovement : MonoBehaviour
         Vector2 input = new Vector2(x, y).normalized;
         rb.linearVelocity = input * moveSpeed;
 
+        
+
     }
 }
