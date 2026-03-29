@@ -4,10 +4,13 @@ public class FrogMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
+    private TongueSpawner tongueSpawner;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        tongueSpawner = GetComponent<TongueSpawner>();
+        tongueSpawner.facingDirection = Vector2.right; // default direction
     }
 
     void FixedUpdate()
@@ -15,5 +18,11 @@ public class FrogMovement : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal_P1");
         float y = Input.GetAxisRaw("Vertical_P1");
         rb.linearVelocity = new Vector2(x, y).normalized * moveSpeed;
+
+        // Only update facing direction when moving horizontally
+        if (x != 0)
+        {
+            tongueSpawner.facingDirection = new Vector2(x, 0).normalized;
+        }
     }
 }
