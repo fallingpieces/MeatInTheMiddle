@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7692604359095828300}
   - component: {fileID: 8491197865580756883}
+  - component: {fileID: 2685387123089309279}
+  - component: {fileID: -302282511485702345}
   m_Layer: 0
   m_Name: Bee
   m_TagString: Untagged
@@ -87,3 +89,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2685387123089309279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8127049064617623769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143616a52b5592b4ab0595e5710f2e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0}
+  speed: 5
+  vanishDistance: 10
+--- !u!114 &-302282511485702345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8127049064617623769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143616a52b5592b4ab0595e5710f2e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0}
+  speed: 5
+  vanishDistance: 10
