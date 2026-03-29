@@ -29,6 +29,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Luc/leftwin3.unity
     guid: 87873ed12e4791244972fe834f058e3b
+  - enabled: 1
+    path: Assets/Luc/left_picker.unity
+    guid: cb58d8f76f77e2f48be0a60a337d1621
+  - enabled: 1
+    path: Assets/Luc/rightpicker.unity
+    guid: a566bc10516005e4aa5b14da57eedee8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
