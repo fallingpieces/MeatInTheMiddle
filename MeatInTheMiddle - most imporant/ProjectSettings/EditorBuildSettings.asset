@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Luc/meat_in_the_middle.unity
+    guid: 24ed32e201c2cba48a527f4285c6426c
+  - enabled: 1
+    path: Assets/Luc/rightwin1.unity
+    guid: 68285a59f5726fa4bac076f002bf329c
+  - enabled: 1
+    path: Assets/Luc/rightwin2.unity
+    guid: bed5aaccb6f77264c88613e32b648b11
+  - enabled: 1
+    path: Assets/Luc/rightwin3.unity
+    guid: cc9634a0bfb6fc24ab0e5964538e3617
+  - enabled: 1
+    path: Assets/Luc/leftwin1.unity
+    guid: 03e5a7579049fb943b71b3da5a7a3092
+  - enabled: 1
+    path: Assets/Luc/leftwin2.unity
+    guid: 136a271bd06b284478371a8a04df1786
+  - enabled: 1
+    path: Assets/Luc/leftwin3.unity
+    guid: 87873ed12e4791244972fe834f058e3b
+  - enabled: 1
+    path: Assets/Luc/left_picker.unity
+    guid: cb58d8f76f77e2f48be0a60a337d1621
+  - enabled: 1
+    path: Assets/Luc/rightpicker.unity
+    guid: a566bc10516005e4aa5b14da57eedee8
+  - enabled: 1
+    path: Assets/Luc/toad_wins.unity
+    guid: 0eefa2abce3597c458ea996a11bdb7d2
+  - enabled: 1
+    path: Assets/Luc/frog_wins.unity
+    guid: fe991370e8389cd408ee034edbe7eb3b
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_UseUCBPForAssetBundles: 0
