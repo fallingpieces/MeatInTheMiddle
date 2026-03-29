@@ -27,7 +27,7 @@ public class BeeMover : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         // Ignore collision with the shooter itself
-        if (other.CompareTag("Meat")) return;
+        if (other.CompareTag("Toad")) return;
 
         Destroy(gameObject);
     }
