@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 6310963589553431666}
   - component: {fileID: 8098931467157659967}
   m_Layer: 0
-  m_Name: Bee
-  m_TagString: Bee
+  m_Name: dontuse
+  m_TagString: Beehurtfrog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3111527532471998145, guid: 9127cf0af2dd5e3429d6c1ed9316534b, type: 3}
+  m_Sprite: {fileID: 3111527532471998145, guid: fa8761f17ab89f74a8859b2717448d83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
