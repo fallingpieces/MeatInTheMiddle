@@ -23,24 +23,24 @@ public class BeeSpawnerTurret : MonoBehaviour
         activeTimer = activeDuration;
     }
 
-    void Update()
+void Update()
+{
+    activeTimer -= Time.deltaTime;
+    if (activeTimer <= 0f)
     {
-        activeTimer -= Time.deltaTime;
-        if (activeTimer <= 0f)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        fireTimer -= Time.deltaTime;
-        if (fireTimer <= 0f)
-        {
-            Fire();
-            fireTimer = fireRate;
-        }
+        Destroy(gameObject);
+        return;
     }
 
-    void Fire()
+    fireTimer -= Time.deltaTime;
+    if (fireTimer <= 0f)
+    {
+        Fire(shootDirection); // pass its own direction
+        fireTimer = fireRate;
+    }
+}
+
+public void Fire(Vector2 direction)
     {
         GameObject bee = Instantiate(beePrefab, transform.position, Quaternion.identity);
         BeeMover mover = bee.GetComponent<BeeMover>();

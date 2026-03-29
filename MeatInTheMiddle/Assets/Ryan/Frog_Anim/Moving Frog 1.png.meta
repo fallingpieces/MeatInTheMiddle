@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f3d44fad86d610144ac5f1a14467411c
+guid: 7c6c9fffb1ead0f41ab3e66b249a3a6a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7261207710406040988
-    second: Idle Toad_0
+      213: -4505647642779574634
+    second: Moving Frog 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle Toad_0
+      name: Moving Frog 1_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 0
-        width: 124
-        height: 157
+        x: 3
+        y: 19
+        width: 155
+        height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c9d541be0fdf4c460800000000000000
-      internalID: 7261207710406040988
+      spriteID: 69e1c014759b871c0800000000000000
+      internalID: -4505647642779574634
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Idle Toad_0: 7261207710406040988
+      Moving Frog 1_0: -4505647642779574634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
