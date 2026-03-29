@@ -5,7 +5,7 @@ public class FrogMovement : MonoBehaviour
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
 
-    private TongueSpawner tongueSpawner;
+    private TongueSpawner1 tongueSpawner;
 
     private Animator animator;
 
@@ -14,7 +14,7 @@ public class FrogMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
-        tongueSpawner = GetComponent<TongueSpawner>();
+        tongueSpawner = GetComponent<TongueSpawner1>();
         tongueSpawner.facingDirection = Vector2.right; // default direction
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -38,7 +38,8 @@ public class FrogMovement : MonoBehaviour
         Vector2 input = new Vector2(x, y).normalized;
         rb.linearVelocity = input * moveSpeed;
 
-        animator.SetBool("isMoving", input.magnitude > 0);
-
+        animator.SetBool("isMoving1", input.magnitude > 0);
+        if (tongueSpawner != null)
+            animator.SetBool("isAttacking1", tongueSpawner.isAttacking1);
     }
 }

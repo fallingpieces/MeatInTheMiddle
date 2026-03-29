@@ -4,7 +4,7 @@ public class BeeSpawner : MonoBehaviour
 {
     [Header("References")]
     public GameObject beePrefab;
-    public TongueSpawner tongueSpawner;
+    public TongueSpawner1 tongueSpawner;
 
     [Header("Ammo")]
     public int maxAmmo = 5;
@@ -13,7 +13,7 @@ public class BeeSpawner : MonoBehaviour
     void Start()
     {
         currentAmmo = 0;
-        tongueSpawner = GetComponent<TongueSpawner>();
+        tongueSpawner = GetComponent<TongueSpawner1>();
     }
 
     void Update()
