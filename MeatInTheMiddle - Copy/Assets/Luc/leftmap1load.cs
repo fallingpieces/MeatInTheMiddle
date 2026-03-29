@@ -5,10 +5,6 @@ public class SceneLoader5 : MonoBehaviour
 {
     public void LoadScene5()
     {
-        // Load the scene
         SceneManager.LoadScene(5);
-
-        // Make the button vanish
-        gameObject.SetActive(false);
     }
 }
