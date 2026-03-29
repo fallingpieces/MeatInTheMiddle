@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Idle Toad_0: 7261207710406040988
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

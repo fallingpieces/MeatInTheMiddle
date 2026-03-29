@@ -2,15 +2,22 @@ using UnityEngine;
 
 public class TurretSpawner : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [Header("References")]
+    public GameObject turretPrefab;
 
-    // Update is called once per frame
+    [Header("Spawn Settings")]
+    public Vector3 spawnOffset = Vector3.zero;
+
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            SpawnTurret();
+        }
+    }
+
+    void SpawnTurret()
+    {
+        Instantiate(turretPrefab, transform.position + spawnOffset, Quaternion.identity);
     }
 }

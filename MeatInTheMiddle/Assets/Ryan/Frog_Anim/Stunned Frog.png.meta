@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stunned Frog_0: 7180780021529952474
+      Stunned Frog_1: -8636433614270275329
+      Stunned Frog_10: -3029268981556536661
+      Stunned Frog_11: 207453205693033438
+      Stunned Frog_12: 724068411573057245
+      Stunned Frog_13: -5990525279778432505
+      Stunned Frog_14: 1641276300637668963
+      Stunned Frog_2: 2150059269531957876
+      Stunned Frog_3: -2811357451658839707
+      Stunned Frog_4: 4449645465007351396
+      Stunned Frog_5: 965258177157145726
+      Stunned Frog_6: -6080394396375207290
+      Stunned Frog_7: -745511733779134018
+      Stunned Frog_8: -1231200513486675998
+      Stunned Frog_9: 4830538709784819683
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

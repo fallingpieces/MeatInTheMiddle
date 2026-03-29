@@ -9,14 +9,14 @@ public class FrogMovement : MonoBehaviour
 
     private Animator animator;
 
-
+    private SpriteRenderer sr;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
         tongueSpawner = GetComponent<TongueSpawner>();
         tongueSpawner.facingDirection = Vector2.right; // default direction
-
+        sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
 
     }
@@ -32,6 +32,7 @@ public class FrogMovement : MonoBehaviour
         if (x != 0)
         {
             tongueSpawner.facingDirection = new Vector2(x, 0).normalized;
+            sr.flipX = x < 0;
         }
 
         Vector2 input = new Vector2(x, y).normalized;

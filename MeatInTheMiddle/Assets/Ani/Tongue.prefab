@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e738eb2e259a814394ed7be53f426d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lingerDuration: 1
+  lingerDuration: 0.2
   beeSpawner: {fileID: 0}
 --- !u!60 &-1877840030880956985
 PolygonCollider2D:
