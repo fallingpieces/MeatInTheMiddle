@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cb6f7d884ea3b6b43bc8e89c893ad779
+guid: 85071c2900511024f89330b6079cb1b1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4654822974209943227
-    second: Idle Frog_0
+      213: -5236775697877361678
+    second: Attack Frog 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle Frog_0
+      name: Attack Frog 1_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 9
-        width: 161
-        height: 207
+        x: 0
+        y: 13
+        width: 224
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54993e1da2fb66fb0800000000000000
-      internalID: -4654822974209943227
+      spriteID: 2fb1f979f3c3357b0800000000000000
+      internalID: -5236775697877361678
       vertices: []
       indices: 
       edges: []
